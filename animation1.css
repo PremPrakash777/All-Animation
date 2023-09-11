@@ -1,0 +1,39 @@
+.contain{
+    background-color: white;
+    }
+    .box{
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        position: relative;
+        animation-name: prem;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    
+    }
+    @keyframes prem {
+        0%{
+            top: 0px;
+            left: 0px;
+            background-color: red;
+
+        }
+        25%{
+            background-color: yellow;
+            top: 500px;
+            left: 0px;
+            
+        }
+        75%{
+            background-color: black;
+            top: 500px;
+            left: 1250px;
+        }
+        100%{
+            background-color: blue;
+            top: 0px;
+            left: 1250px;
+
+        }
+    }

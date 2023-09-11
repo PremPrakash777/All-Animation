@@ -1,0 +1,37 @@
+.battery {
+    width: 200px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 20px;
+    position: relative;
+  }
+.battery::before {
+    content: "";
+    width: 30px;
+    height: 45px;
+    border-radius: 20%;
+    background-color: black;
+    position: absolute;
+    top: 24px;
+    right: -35px;
+}
+  
+  .level {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    animation: charge 5s linear infinite;
+  }
+  
+  @keyframes charge {
+    from {
+      width: 0%;
+      background-color: red;
+    }
+    
+    to 
+    {
+      width: 100%;
+      background-color: green;
+    }
+  }

@@ -1,0 +1,22 @@
+.contain{
+background-color: gray;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: relative;
+    animation-name: prem;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes prem {
+    from{
+        width: 1px;
+
+    }
+    to{
+        width: 100%;
+    }
+}
